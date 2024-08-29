@@ -2034,6 +2034,9 @@ button.tinvwl_button_view.th-btn .ftinvwl.ftinvwl-heart-o {
     -ms-flex: none;
     flex: none
 }
+.form-group .th-btn {
+    
+}
 
 @media (max-width: 575px) {
     .subscribe-wrap1 .newsletter-form .form-group {
