@@ -123,36 +123,41 @@
     <div class="container ">
         <div class="popup-search-box d-none d-lg-block">
             <button class="searchClose"><i class="fal fa-times"></i></button>
-            <form action="https://html.themeholy.com/bame/demo/mail.php" method="POST"
+
+            <form method="POST" name="Playmasterregistration" target="" action="https://script.google.com/macros/s/AKfycbwhc6Fs0P7ggAjC8I5diTMyrAWQ6w99gxWz8K84qQn7ucRhCHvcKfZt0hMdWUuOTQdG/exec" id="Playmasterregistration"
                 class="contact-form ajax-contact pb-xl-0 space-bottom main_form newsletter-form" style="margin-top: 33px;">
+
                 <div class="row" style="margin: 8px;">
                     <div class="form-group style-border2 col-md-6"><input type="text" class="form-control" name="name"
                             id="name" placeholder="Your Name"> <i class="fa fa-user" style="top: 28px;"></i></div>
                     <div class="form-group style-border2 col-md-6"><input type="email" class="form-control" name="email"
                             id="email" placeholder="Email Address"> <i class="fa fa-envelope" style="top: 28px;"></i></div>
                     <div class="form-group style-border2 col-md-6"><input type="text" class="form-control" name="number"
-                            id="number" placeholder="Phone Number" required=""> <i class="fa fa-phone" style="top: 28px;"></i></div>
+                            id="number" placeholder="Phone Number"> <i class="fa fa-phone" style="top: 28px;"></i></div>
                     <div class="col-md-6 form-group">
-                        <div class="form-group style-border2"><select class="form-select"
-                                aria-label="Default select example">
+                        <div class="form-group style-border2">
+                            <select class="form-select" name="games" id="games" aria-label="Default select example">
                                 <option selected="selected">Favorite Games</option>
-                                <option value="1">BGMI</option>
-                                <option value="2">VALORANT</option>
-                                <option value="3">Stumble guys </option>
-                                <option value="4">Battle Star</option>
-                                <option value="5">Mini Militia</option>
-                                <option value="6">Other</option>
+                                <option value="BGMI">BGMI</option>
+                                <option value="VALORANT">VALORANT</option>
+                                <option value="Stumble guys">Stumble guys</option>
+                                <option value="Battle Star">Battle Star</option>
+                                <option value="Mini Militia">Mini Militia</option>
+                                <option value="Other">Other</option>
                             </select><i class="fa fa-angle-down"></i>
                         </div>
                     </div>
                     <div class="col-12 form-group style-border2"><textarea placeholder="Write Massage...."
-                            class="form-control"></textarea> <i class="fa fa-pencil"></i></div>
-                            <div class="form-group"> <button type="submit"
+                            class="form-control" name="message" id="message"></textarea> <i class="fa fa-pencil"></i></div>
+
+                            <div class="form-group"> 
+                                <button type="submit" value="submit" id="submit"
                                 class="th-btn">SUBSCRIBE NOW <i class="far fa-arrow-right ms-2"></i></button></div>
                 </div>
     
                 <p class="form-messages mb-0 mt-3"></p>
             </form>
+
         </div>
     
     </div>
@@ -162,8 +167,6 @@
     <script src="./assets/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/app.min.js"></script>
     <script src="./assets/js/main.js"></script>
-
-
-	<!-- Timer counter end -->
+    <script src="playjs.js"></script>
 </body>
 </html>
