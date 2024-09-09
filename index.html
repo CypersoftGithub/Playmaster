@@ -176,8 +176,13 @@
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" value="submit" id="submit" class="th-btn">SUBSCRIBE NOW <i
+                        <button type="submit" value="submit" id="submit" class="th-btn" onclick="show('popup')">SUBSCRIBE NOW <i
                                 class="far fa-arrow-right ms-2"></i></button>
+                                <div class="popup" id="popup">
+                                    <p class="text-center" style="font-size: 25px;">Thank you for Subscribe</p>
+                                    <button onclick="location.href = 'https://www.playmaster.in'"  class="th-btn" style="margin-top: 90px;margin-right: 20px;">Thank You <i
+                                        class="far fa-arrow-right ms-2"></i></button>
+                                </div>
                     </div>
                 </div>
 
@@ -194,6 +199,8 @@
     <script src="./assets/js/app.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="playjs.js"></script>
+    <script src="./assets/js/button.js"></script>
+    
 </body>
 
 </html>
