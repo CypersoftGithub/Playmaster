@@ -141,9 +141,9 @@
         <div class="popup-search-box d-none d-lg-block">
             <button class="searchClose"><i class="fal fa-times"></i></button>
 
-            <form method="doPOST" name="Playmasterregistration" target="_self"
-                action="https://script.google.com/macros/s/AKfycbzoEowW6af1FCSt0c_nm6fqfQYv5DBAPQ-VxVjgAO-zv6AKyZo5bgYWAtDkPjarzOYm/exec"
-                id="Playmasterregistration"
+            <form method="doPOST" name="PlaymasterPreregistration" target="_self"
+                action="https://script.google.com/macros/s/AKfycbz2cJbZ6wBcRMneS_z_znoovM9KkgWWF1uxSYDTgwYOcklsBXkSUBTdZnlCoL5LAzWfHg/exec"
+                id="PlaymasterPreregistration"
                 class="contact-form ajax-contact pb-xl-0 space-bottom main_form newsletter-form"
                 style="margin-top: 33px;">
 
@@ -200,7 +200,21 @@
     <script src="./assets/js/main.js"></script>
     <script src="playjs.js"></script>
     <script src="./assets/js/button.js"></script>
-    
+    <script>
+        //just some js to simulate fake loading time
+
+function removeClass(){  
+    submit.className = submit.className.replace(new RegExp('(?:^|\\s)loading(?!\\S)'), '');
+}
+
+var submit = document.getElementById('submit');
+
+
+submit.addEventListener("click", function() {
+    submit.className = submit.className + ' loading';
+    setTimeout(removeClass, 2000);
+}, false);
+    </script>
 </body>
 
 </html>
