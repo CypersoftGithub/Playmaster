@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbz2cJbZ6wBcRMneS_z_znoovM9KkgWWF1uxSYDTgwYOcklsBXkSUBTdZnlCoL5LAzWfHg/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxBUlu4im6s1RhKQnL34kRBZn0efVlBS62cy7RDhWI/dev'
 
 
 const form = document.forms['PlaymasterPreregistration']
