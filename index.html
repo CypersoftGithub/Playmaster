@@ -137,7 +137,7 @@
     </div>
     <!-- Coming Soon Wrapper end -->
 
-    <div class="container ">
+    <!-- <div class="container ">
         <div class="popup-search-box d-none d-lg-block">
             <button class="searchClose"><i class="fal fa-times"></i></button>
 
@@ -186,20 +186,130 @@
                     </div>
                 </div>
 
-                <!-- <p class="form-messages mb-0 mt-3"></p> -->
             </form>
 
         </div>
 
-    </div>
+    </div> -->
+    <div class="container"></div>
+        <div class="popup-search-box d-none d-lg-block">
+            <button class="searchClose"><i class="fal fa-times"></i></button>
+            <form method="doPOST" name="PlaymasterPreregistration" target="_self"
+            action="https://script.google.com/macros/s/AKfycbz2cJbZ6wBcRMneS_z_znoovM9KkgWWF1uxSYDTgwYOcklsBXkSUBTdZnlCoL5LAzWfHg/exec"
+            id="PlaymasterPreregistration"
+            class="contact-form ajax-contact pb-xl-0 space-bottom main_form newsletter-form"
+            style="margin-top: 33px;">
+                <div class="row" style="margin: 8px;">
+                    <div class="form-group style-border2 col-md-6"><input type="text" class="form-control" name="name"
+                            id="name" placeholder="Your Name" required> <i class="fa fa-user" style="top: 28px;"></i>
+                    </div>
+                    <div class="form-group style-border2 col-md-6"><input type="email" class="form-control" name="email"
+                            id="email" placeholder="Email Address" required> <i class="fa fa-envelope"
+                            style="top: 28px;"></i></div>
+                    <div class="form-group style-border2 col-md-6"><input type="text" class="form-control" name="number"
+                            id="number" placeholder="Phone Number" required> <i class="fa fa-phone"
+                            style="top: 28px;"></i></div>
+                    <div class="col-md-6 form-group">
+                        <div class="form-group style-border2">
+                            <select class="form-select" name="games" id="games" aria-label="Default select example"
+                                required>
+                                <option selected="selected" value="">Favorite Games</option>
+                                <option value="BGMI">BGMI</option>
+                                <option value="VALORANT">VALORANT</option>
+                                <option value="Stumble guys">Stumble guys</option>
+                                <option value="Battle Star">Battle Star</option>
+                                <option value="Mini Militia">Mini Militia</option>
+                                <option value="Other">Other</option>
+                            </select><i class="fa fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 form-group style-border2"><textarea placeholder="Write Massage...."
+                            class="form-control" name="message" id="message"></textarea> <i class="fa fa-pencil"></i>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" id="submit" class="th-btn">SUBSCRIBE NOW <i class="far fa-arrow-right ms-2"></i></button>
+                    </div>
+                </div>
+            </form>
+            <div id="loading" class="loading" style="display: none;"><img src="./assets/img/Eclipse@1x-1.0s-200px-200px.svg" alt="" style="margin-top: 200px;"></div>
+        <div id="popup" class="popup row" style="display: none;">
+            <div class="col-12">
+                <p class="text-center" style="font-size: 25px;">Thank you for subscribing!</p>
+            </div>
+            <div class="form-group col-12 text-center">
+                <button onclick="location.href='https://www.playmaster.in'" class="th-btn">Thank You <i class="far fa-arrow-right ms-2"></i></button>
+                </div>
+            </div>
+        </div>
 
+        
+    </div>
+    <!-- <style>
+        .loading {
+            font-size: 20px;
+            color: blue;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .popup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        .popup p {
+            background: #222;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style> -->
+    <script>
+       document.getElementById('submit').addEventListener('click', function() {
+    const form = document.getElementById('PlaymasterPreregistration');
+    const submitButton = document.getElementById('submit');
+
+    // Check if the form is valid
+    if (form.checkValidity()) {
+        // Disable the button to prevent multiple submissions
+        submitButton.disabled = true;
+
+        // Show loading message
+        const loading = document.getElementById('loading');
+        loading.style.display = 'block';
+
+        // Simulate a loading delay
+        setTimeout(() => {
+            // Hide loading and show popup
+            loading.style.display = 'none';
+            const popup = document.getElementById('popup');
+            popup.style.display = 'flex';
+
+            // Clear the form fields
+            form.reset();
+
+            // Optionally, you can re-enable the button here if needed
+            // submitButton.disabled = false; // Uncomment to enable it again
+        }, 2000); // 2 seconds delay for demo
+    } else {
+        // If the form is invalid, trigger the native validation UI
+        form.reportValidity();
+    }
+});
+
+
+    </script>
 
 
     <script src="./assets/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/app.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="playjs.js"></script>
-    <script src="./assets/js/button.js"></script>
     <script>
         //just some js to simulate fake loading time
 
