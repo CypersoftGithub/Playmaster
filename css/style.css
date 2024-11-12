@@ -2308,18 +2308,17 @@ select.style2 {
 
 
 
-@media (max-width: 760px) {
+/* @media (max-width: 760px) {
 
   .main_form{
     padding: 10px 10px;
   }
   .popup-search-box button.searchClose {
-    width: 37px;
-    height: 36px;
+    width: 60px !important;
+    height: 60px !important;
     position: absolute;
     top: 7px;
     right: 40px;
-    /* border-width: 1px; */
     border-style: solid;
     border-color: #F2003A;
     background-color: transparent;
@@ -2334,7 +2333,7 @@ select.style2 {
 }
 
     
-}
+} */
 
 .th-social a {
     display: inline-block;
@@ -2557,6 +2556,22 @@ body:has(.cursor-image) {
     border-radius: 10px;
     z-index: -1;
   }
+
+@media only screen and (max-width: 325px) {
+    .popup {
+        width: 298px;
+        height: 167px;
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .popup {
+        width: 298px;
+        height: 167px;
+
+    }
+}
   
   /* Styling buttons & webpage */
   
