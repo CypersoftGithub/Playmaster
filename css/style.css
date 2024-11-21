@@ -1593,7 +1593,7 @@ button.tinvwl_button_view.th-btn .ftinvwl.ftinvwl-heart-o {
     width: 100%;
     background-color: transparent;
     padding-right: 80px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     background: var(--black-color3);
     border: 0;
     color: var(--white-color);
