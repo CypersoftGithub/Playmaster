@@ -223,9 +223,9 @@
                             </select><i class="fa fa-angle-down"></i>
                         </div>
                     </div>
-                            <div class="form-group style-border2 col-md-12"><input type="text" class="form-control" name="discord" id="discord"
+                            <!-- <div class="form-group style-border2 col-md-12"><input type="text" class="form-control" name="discord" id="discord"
                                                 placeholder="Discord id (Ex.UserName#1234)"> <i class="fa fa-user" style="top: 28px;"></i>
-                            </div>
+                            </div> -->
                     <div class="col-md-12 form-group style-border2"><textarea placeholder="Write Massage...."
                             class="form-control" name="message" id="message"></textarea> <i class="fa fa-pencil"></i>
                     </div>
@@ -237,10 +237,10 @@
             <div id="loading" class="loading" style="display: none;"><img src="./assets/img/Eclipse@1x-1.0s-200px-200px.svg" alt="" class="loding-img" style=""></div>
         <div id="popup" class="popup row" style="display: none;">
             <div class="col-12">
-                <p class="text-center" style="font-size: 25px;">Thank you for subscribing!</p>
+                <p class="text-center" style="font-size: 20px;">Thanks for registering!<br> Join our Discord for updates.</p>
             </div>
             <div class="form-group col-12 text-center">
-                <button onclick="location.href='https://www.playmaster.in'" class="th-btn">Done<i class="fa-solid fa-check ms-2"></i></button>
+                <button onclick="newWindow('https://discord.com/invite/hgmP8eF9mt')" class="th-btn">Join Discord <i class="fa-brands fa-discord" style="padding-left: 5px;"></i></button>
                 </div>
             </div>
         </div>
@@ -308,7 +308,11 @@
 
     </script> -->
 
-
+    <script>
+           function newWindow(url) {
+           window.open(url, '_blank');
+        }
+     </script>
     <script src="./assets/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/app.min.js"></script>
     <script src="./assets/js/main.js"></script>
